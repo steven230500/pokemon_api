@@ -1,40 +1,44 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Pokémon API - Micro Paquete
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+Este micro paquete incluye modelos de datos y servicios para manejar las llamadas a la API, como obtener listas de Pokémon y buscar información detallada de un Pokémon.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+---
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## Características
 
-## Features
+- **Modelos**: Incluye modelos como `Pokemon`, `Ability`, `Type`, `Stat`, entre otros.
+- **Gestión de API**: Maneja llamadas a la API de Pokémon usando `dio`.
+- **Modularidad**: Diseñado para ser independiente y reutilizable en otros proyectos.
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+---
 
-## Getting started
+## Instalación
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+1. **Clonar el Micro Paquete**
 
-## Usage
+   Clona el repositorio que contiene este micro paquete:
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+   ```bash
+   git clone https://github.com/steven230500/pokemon_api.git
+   cd pokemon_api
+   ```
 
-```dart
-const like = 'sample';
-```
+2. **Instalar Dependencias**
 
-## Additional information
+   Ejecuta el siguiente comando para instalar las dependencias necesarias:
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
-# pokemon_api
+   ```bash
+   flutter pub get
+   ```
+
+3. **Uso en el proyecto principal**
+
+   Para utilizar este micro paquete en el proyecto principal, agrégalo como una dependencia local en el archivo `pubspec.yaml` del proyecto principal:
+
+   ```yaml
+   dependencies:
+     pokemon_api:
+       path: ../pokemon_api
+   ```
+
+---
